@@ -1,6 +1,6 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua")()
 
-local win = DiscordLib:Window("CUTTAY HUG-Blox Fruit | By Binhackerlo")
+local win = DiscordLib:Window("CUTTAY HUB-Blox Fruit | By Binhackerlo")
 
 local serv = win:Server("Preview", "")
 
