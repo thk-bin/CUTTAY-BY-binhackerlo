@@ -1,48 +1,75 @@
-local uilibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua"))()
-local windowz = uilibrary:CreateWindow("CUTTAY HUB", "| BY binhackerlo", true)
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
-local Page1 = windowz:CreatePage("Page I")
+local win = DiscordLib:Window("discord library")
 
+local serv = win:Server("Preview", "")
 
-local Section1 = Page1:CreateSection("Section Name")
+local btns = serv:Channel("Buttons")
 
-Section1:CreateSlider("Slider Example", {Min = 16, Max = 500, DefaultValue = 30}, function(Value)
-   print(Value)
+btns:Button("Kill all", function()
+DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
 end)
 
-Section1:CreateToggle("Toggle Example", {Toggled=false , Description = false}, function(Value)
-   print(Value)
+btns:Seperator()
+
+btns:Button("Get max level", function()
+DiscordLib:Notification("Notification", "Max level!", "Okay!")
 end)
 
-Section1:CreateButton("Button Example", function ()
-   print("Button Cliked!")
+local tgls = serv:Channel("Toggles")
+
+tgls:Toggle("Auto-Farm",false, function(bool)
+print(bool)
 end)
 
-Section1:CreateTextbox("TextBox", false, function (vv)
-   print(vv)
+local sldrs = serv:Channel("Sliders")
+
+local sldr = sldrs:Slider("Slide me!", 0, 1000, 400, function(t)
+print(t)
 end)
 
-Section1:CreateDropdown("Dropdown ", {
-   List = {"Value1", "Value2", "Value3", "Value4"},
-   Default = "None"}, function(value)
-       print(value)
+sldrs:Button("Change to 50", function()
+sldr:Change(50)
 end)
 
-Section1:CreateColorPicker("Color Picker", Color3.fromRGB(255, 255, 255), function ()
-   print("fsf")
+local drops = serv:Channel("Dropdowns")
+
+
+local drop = drops:Dropdown("Pick me!",{"Option 1","Option 2","Option 3","Option 4","Option 5"}, function(bool)
+print(bool)
 end)
 
-local dropdown = Section1:CreateDropdown("Refresh Dropdown ", {
-   List = {"Value1", "Value2", "Value3", "Value4"},
-   Default = "None"}, function(value)
-       print(value)
+drops:Button("Clear", function()
+drop:Clear()
 end)
 
-
-
-Section1:CreateButton("Refresh Example", function ()
-   local newlist = {"resf", "uwua", "fsk"}
-   dropdown:Clear()
-   wait(1)
-   dropdown:Add(newlist)
+drops:Button("Add option", function()
+drop:Add("Option")
 end)
+
+local clrs = serv:Channel("Colorpickers")
+
+clrs:Colorpicker("ESP Color", Color3.fromRGB(255,1,1), function(t)
+print(t)
+end)
+
+local textbs = serv:Channel("Textboxes")
+
+textbs:Textbox("Gun power", "Type here!", true, function(t)
+print(t)
+end)
+
+local lbls = serv:Channel("Labels")
+
+lbls:Label("This is just a label.")
+
+local bnds = serv:Channel("Binds")
+
+bnds:Bind("Kill bind", Enum.KeyCode.RightShift, function()
+print("Killed everyone!")
+end)
+
+serv:Channel("by dawid#7205")
+
+
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
