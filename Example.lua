@@ -1,12 +1,12 @@
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua")()
 
-local win = DiscordLib:Window("discord library")
+local win = DiscordLib:Window("CUTTAY HUG | By Binhackerlo")
 
 local serv = win:Server("Preview", "")
 
 local btns = serv:Channel("Buttons")
 
-btns:Button("Kill all", function()
+btns:Button("Kill-all", function()
 DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
 end)
 
