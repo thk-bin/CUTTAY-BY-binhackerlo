@@ -1,6 +1,6 @@
 local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua'))()
 
-local Window = library:CreateWindow("Name", "Version", 10044538000)
+local Window = library:CreateWindow("Name", "Version")
 
 local Tab = Window:CreateTab("Scripts")
 
