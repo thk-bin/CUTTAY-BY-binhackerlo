@@ -1,12 +1,12 @@
 local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua'))()
 
-local Window = library:CreateWindow("CUTTAY HUB-Blox Fruit", "By binhackerlo (Version)")
+local Window = library:CreateWindow("Name", "Version", 10044538000)
 
-local Tab = Window:CreateTab("TAP SCRIPT")
+local Tab = Window:CreateTab("Scripts")
 
-local Page = Tab:CreateFrame("Tab Home")
+local Page = Tab:CreateFrame("Page 1")
 
-Button = Page:CreateButton("Auto Fram", "Auto Fram under", function()
+Button = Page:CreateButton("Button", "Description", function()
 CreateNotification("Title", "Description", function(value)
 if value == true then
 print(true)
@@ -16,7 +16,7 @@ end
 end)
 end)
 
-Toggle = Page:CreateToggle("Auto Fram Lever", "How to fix code", function(arg)
+Toggle = Page:CreateToggle("Toggle", "Description", function(arg)
 Toggle:UpdateToggle("New Title", "New Description")
 print(arg)
 end)
