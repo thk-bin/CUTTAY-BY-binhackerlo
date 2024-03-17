@@ -2,7 +2,7 @@ local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/thk-b
 
 local Window = library:CreateWindow("CUTTAY HUB-Blox Fruit", "By binhackerlo (Version)")
 
-local Tab = Window:CreateTab("BO LAC CUT TAY")
+local Tab = Window:CreateTab("TAP SCRIPT")
 
 local Page = Tab:CreateFrame("Tab Home")
 
