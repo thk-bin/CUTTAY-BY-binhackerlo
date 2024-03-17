@@ -9,7 +9,7 @@ loadstring(request({Url="https://raw.githubusercontent.com/cypherdh/Script-Libra
 local UIS = game:GetService("UserInputService")
 local TS = game:GetService("TweenService")
 function library:CreateWindow(name, version, icon)
-	name = name or "CUTTAY HUB"
+	name = name or "CUTTAY HUB-Blox Fruit"
 	version = version or "By binhackerlo (Version)"
 	icon = icon or math.random()
 	local MyGui = Instance.new("ScreenGui")
