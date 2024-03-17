@@ -6,7 +6,7 @@ local Tab = Window:CreateTab("TAP SCRIPT")
 
 local Page = Tab:CreateFrame("Tab Home")
 
-Button = Page:CreateButton("Auto Fram", "Auto Fram lever", function()
+Button = Page:CreateButton("Auto Fram", "Auto Fram under", function()
 CreateNotification("Title", "Description", function(value)
 if value == true then
 print(true)
