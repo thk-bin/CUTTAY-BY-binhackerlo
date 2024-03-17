@@ -2,11 +2,11 @@ local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/thk-b
 
 local Window = library:CreateWindow("CUTTAY HUB-Blox Fruit", "By binhackerlo (Version)")
 
-local Tab = Window:CreateTab("Scripts")
+local Tab = Window:CreateTab("BO LAC CUT TAY")
 
-local Page = Tab:CreateFrame("Page 1")
+local Page = Tab:CreateFrame("Tab Home")
 
-Button = Page:CreateButton("Button", "Description", function()
+Button = Page:CreateButton("Auto Fram", "Auto Fram lever", function()
 CreateNotification("Title", "Description", function(value)
 if value == true then
 print(true)
