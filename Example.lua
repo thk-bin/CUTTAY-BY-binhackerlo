@@ -16,7 +16,7 @@ end
 end)
 end)
 
-Toggle = Page:CreateToggle("Toggle", "Description", function(arg)
+Toggle = Page:CreateToggle("Auto Fram Lever", "How to fix code", function(arg)
 Toggle:UpdateToggle("New Title", "New Description")
 print(arg)
 end)
