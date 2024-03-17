@@ -1,6 +1,6 @@
 local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua'))()
 
-local Window = library:CreateWindow("Name", "Version")
+local Window = library:CreateWindow("CUTTAY HUB-Blox Fruit", "By binhackerlo (Version)")
 
 local Tab = Window:CreateTab("Scripts")
 
