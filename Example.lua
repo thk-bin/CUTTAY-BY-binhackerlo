@@ -23,90 +23,28 @@ local Tab = Window:Tab({
  })
  
 local Section = Tab:Section({
-    Text = "Chip"
+    Text = "Tap Raid Fruit"
  })
 
  Section:Button({
-    Text = "Flame",
+    Text = "Buy Chip",
     Callback = function()
-        warn("Flame")
+        warn("Buy Chip")
     end
  })
  
- Section:Button({
-    Text = "Ice",
+Section:Button({
+    Text = "Kill Aura",
     Callback = function()
-        warn("Ice")
+        warn("Kill Aura")
     end
  })
  
- Section:Button({
-    Text = "Quake",
-    Callback = function()
-        warn("Quake")
-    end
- })
-
- Section:Button({
-    Text = "Light",
-    Callback = function()
-        warn("Light")
-    end
- })
-
- Section:Button({
-    Text = "Dark",
-    Callback = function()
-        warn("Dark")
-    end
- })
- 
- Section:Button({
-    Text = "Spider",
-    Callback = function()
-        warn("Spider")
-    end
- })
- 
- Section:Button({
-    Text = "Rumble",
-    Callback = function()
-        warn("Rumble")
-    end
- })
- 
- Section:Button({
-    Text = "Magma",
-    Callback = function()
-        warn("Magma")
-    end
- })
- 
- Section:Button({
-    Text = "Buddha",
-    Callback = function()
-        warn("Buddha")
-    end
- })
- 
- Section:Button({
-    Text = "Sand",
-    Callback = function()
-        warn("Sand")
-    end
- })
- 
- Section:Button({
-    Text = "Phoenix",
-    Callback = function()
-        warn("Phoenix")
-    end
- })
- 
- Section:Button({
-    Text = "Dough",
-    Callback = function()
-        warn("Dough")
+local drop = Section:Dropdown({
+    Text = "Choose",
+    List = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"},
+    Callback = function(v)
+        warn(v)
     end
  })
  
