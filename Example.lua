@@ -5,3 +5,7 @@ local Flags = Library.Flags
 local Window = Library:Window({
    Text = "CUTTAY HUB-Blox Fruit | By Binhackerlo (Version)"
 })
+
+local Tab = Window:Tab({
+    Text = "Tap Raid"
+ })
