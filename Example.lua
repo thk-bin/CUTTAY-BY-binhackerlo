@@ -33,7 +33,13 @@ local Section = Tab:Section({
     end
 }) 
 
-local Chips = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"}
+local drop = Section:Dropdown({
+    Text = "Buy Chip",
+    List = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"},
+    Callback = function(v)
+        warn(v)
+    end
+ })
 
 local DropdownRaid = Tabs.Raid:AddDropdown("DropdownRaid", {
     Title = "Chọn Chip",
