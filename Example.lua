@@ -6,7 +6,7 @@ local Tab = Window:CreateTab("Tap")
 
 local Page = Tab:CreateFrame("Tap Raid")
 
-Button = Page:CreateButton("Buy Chip", "How To Fix", function()
+Button = Page:CreateButton("Tap Raid", "How To Fix code", function()
 CreateNotification("Title", "Description", function(value)
 if value == true then
 print(true)
@@ -15,3 +15,8 @@ print(false)
 end
 end)
 end)
+Toggle = Page:CreateToggle("Toggle", "Description", function(arg)
+    Toggle:UpdateToggle("New Title", "New Description")
+    print(arg)
+    end)
+    
