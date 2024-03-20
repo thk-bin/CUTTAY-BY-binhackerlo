@@ -33,46 +33,6 @@ local Section = Tab:Section({
     end
 }) 
 
-local drop = Section:Dropdown({
-    Text = "Buy Chip",
-    List = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"},
-    Callback = function(v)
-        warn(v)
-    end
- })
-
-local DropdownRaid = Tabs.Raid:AddDropdown("DropdownRaid", {
-    Title = "Chọn Chip",
-    Description = "",
-    Values = Chips,
-    Multi = false,
-    Default = 1,
-})
-DropdownRaid:SetValue("...")
-DropdownRaid:OnChanged(function(Value)
-    SelectChip = Value
-end)
-
-local ToggleBuy = Tabs.Raid:AddToggle("ToggleBuy", {Title = "Buy Chip", Description = "",Default = false })
-ToggleBuy:OnChanged(function(Value)
-    _G.Auto_Buy_Chips_Dungeon = Value
-end)
-Options.ToggleBuy:SetValue(false)
-spawn(function()
-    while wait() do
-		if _G.Auto_Buy_Chips_Dungeon then
-			pcall(function()
-				local args = {
-					[1] = "RaidsNpc",
-					[2] = "Select",
-					[3] = SelectChip
-				}
-				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-			end)
-        end
-    end
-end)
- 
 Section:Button({
     Text = "Kill Aura",
     Callback = function()
@@ -98,5 +58,13 @@ Section:Button({
     Text = "Auto Thức Tỉnh",
     Callback = function()
         warn("Auto Thức Tỉnh")
+    end
+ })
+
+ local drop = Section:Dropdown({
+    Text = "Buy Chip",
+    List = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"},
+    Callback = function(v)
+        warn(v)
     end
  })
