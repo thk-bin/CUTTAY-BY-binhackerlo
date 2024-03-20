@@ -1,16 +1,16 @@
 local uilibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua"))()
-local windowz = uilibrary:CreateWindow("UI Library", "Game Name", true)
+local windowz = uilibrary:CreateWindow("CUTTAY HUB-Blox Fruit |", "By binhackerlo", true)
 
-local Page1 = windowz:CreatePage("Page I")
+local Page1 = windowz:CreatePage("Tap Auto Fram")
 
 
-local Section1 = Page1:CreateSection("Section Name")
+local Section1 = Page1:CreateSection("Auto Fram Lever Fix")
 
-Section1:CreateSlider("Slider Example", {Min = 16, Max = 500, DefaultValue = 30}, function(Value)
+Section1:CreateSlider("Fast Attack", {Min = 20, Max = 500, DefaultValue = 30}, function(Value)
    print(Value)
 end)
 
-Section1:CreateToggle("Toggle Example", {Toggled=false , Description = false}, function(Value)
+Section1:CreateToggle("Auto Fram Lever", {Toggled=false , Description = false}, function(Value)
    print(Value)
 end)
 
