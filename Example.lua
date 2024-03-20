@@ -1,12 +1,12 @@
-local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua'))()
 
-local Window = library:CreateWindow("Name", "Version", 10044538000)
+local Window = library:CreateWindow("CUTTAY HUB-Blox Fruit", "By binhackerlo (Version)", 10044538000)
 
-local Tab = Window:CreateTab("Scripts")
+local Tab = Window:CreateTab("Tap")
 
-local Page = Tab:CreateFrame("Page 1")
+local Page = Tab:CreateFrame("Tap Raid")
 
-Button = Page:CreateButton("Button", "Description", function()
+Button = Page:CreateButton("Buy Chip", "How To Fix", function()
 CreateNotification("Title", "Description", function(value)
 if value == true then
 print(true)
