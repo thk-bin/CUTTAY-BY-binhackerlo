@@ -16,8 +16,7 @@ end
 end)
 end)
 
-Toggle = Page:CreateToggle("Toggle", "Description", function(arg)
-Toggle:UpdateToggle("New Title", "New Description")
+Bind = Page:CreateBind("Buy Chip Raid", "{"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"}", function(arg)
+Bind:UpdateBind("New Title")
 print(arg)
 end)
-    
