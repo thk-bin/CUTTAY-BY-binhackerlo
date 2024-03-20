@@ -30,7 +30,24 @@ local Section = Tab:Section({
     Text = "Buy Chip",
     Callback = function()
         warn("Buy Chip")
-        local ToggleBuy = Tabs.Raid:AddToggle("ToggleBuy", {Title = "Buy Chip", Description = "",Default = false })
+    end
+}) 
+
+local Chips = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"}
+
+local DropdownRaid = Tabs.Raid:AddDropdown("DropdownRaid", {
+    Title = "Chọn Chip",
+    Description = "",
+    Values = Chips,
+    Multi = false,
+    Default = 1,
+})
+DropdownRaid:SetValue("...")
+DropdownRaid:OnChanged(function(Value)
+    SelectChip = Value
+end)
+
+local ToggleBuy = Tabs.Raid:AddToggle("ToggleBuy", {Title = "Buy Chip", Description = "",Default = false })
 ToggleBuy:OnChanged(function(Value)
     _G.Auto_Buy_Chips_Dungeon = Value
 end)
@@ -49,9 +66,6 @@ spawn(function()
         end
     end
 end)
-    end
- })
-
  
 Section:Button({
     Text = "Kill Aura",
@@ -78,13 +92,5 @@ Section:Button({
     Text = "Auto Thức Tỉnh",
     Callback = function()
         warn("Auto Thức Tỉnh")
-    end
- })
- 
-local drop = Section:Dropdown({
-    Text = "Choose",
-    List = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"},
-    Callback = function(v)
-        warn(v)
     end
  })
