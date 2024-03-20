@@ -21,3 +21,21 @@ local Tab = Window:Tab({
  local Tab4 = Window:Tab({
     Text = "Tap sea even"
  })
+ 
+local Section = Tab:Section({
+    Text = "Chip"
+ })
+
+ Section:Button({
+    Text = "Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough",
+    Callback = function()
+        warn("Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough")
+    end
+ })
+
+ Section:Toggle({
+    Text = "Next Đảo",
+    Callback = function(bool)
+        warn(bool)
+    end
+ })
