@@ -15,6 +15,7 @@ print(false)
 end
 end)
 end)
+
 Toggle = Page:CreateToggle("Toggle", "Description", function(arg)
 Toggle:UpdateToggle("New Title", "New Description")
 print(arg)
