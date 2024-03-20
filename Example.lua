@@ -23,7 +23,7 @@ local Tab = Window:Tab({
  })
  
 local Section = Tab:Section({
-    Text = "Tap Raid Fruit"
+    Text = "Tap Raid"
  })
 
  Section:Button({
@@ -37,6 +37,27 @@ Section:Button({
     Text = "Kill Aura",
     Callback = function()
         warn("Kill Aura")
+    end
+ })
+  
+Section:Button({
+    Text = "Next Đảo",
+    Callback = function()
+        warn("Next Đảo")
+    end
+ })
+  
+Section:Button({
+    Text = "Bắt Đầu Raid",
+    Callback = function()
+        warn("Bắt Đầu Raid")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Auto Thức Tỉnh",
+    Callback = function()
+        warn("Auto Thức Tỉnh")
     end
  })
  
