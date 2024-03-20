@@ -27,15 +27,86 @@ local Section = Tab:Section({
  })
 
  Section:Button({
-    Text = "Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough",
+    Text = "Flame",
     Callback = function()
-        warn("Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough")
+        warn("Flame")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Ice",
+    Callback = function()
+        warn("Ice")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Quake",
+    Callback = function()
+        warn("Quake")
     end
  })
 
- Section:Toggle({
-    Text = "Next Đảo",
-    Callback = function(bool)
-        warn(bool)
+ Section:Button({
+    Text = "Light",
+    Callback = function()
+        warn("Light")
     end
  })
+
+ Section:Button({
+    Text = "Dark",
+    Callback = function()
+        warn("Dark")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Spider",
+    Callback = function()
+        warn("Spider")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Rumble",
+    Callback = function()
+        warn("Rumble")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Magma",
+    Callback = function()
+        warn("Magma")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Buddha",
+    Callback = function()
+        warn("Buddha")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Sand",
+    Callback = function()
+        warn("Sand")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Phoenix",
+    Callback = function()
+        warn("Phoenix")
+    end
+ })
+ 
+ Section:Button({
+    Text = "Dough",
+    Callback = function()
+        warn("Dough")
+    end
+ })
+ 
