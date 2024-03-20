@@ -1,70 +1,48 @@
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua'))()
-Library.Theme = "Dark"
-local Flags = Library.Flags
+local uilibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua"))()
+local windowz = uilibrary:CreateWindow("UI Library", "Game Name", true)
 
-local Window = Library:Window({
-   Text = "CUTTAY HUB-Blox Fruit | By Binhackerlo (Version)"
-})
+local Page1 = windowz:CreatePage("Page I")
 
-local Tab = Window:Tab({
-    Text = "Tap Raid"
- })
- 
- local Tab2 = Window:Tab({
-    Text = "Tap Shop"
- })
- 
- local Tab3 = Window:Tab({
-    Text = "Tap Fram"
- })
- 
- local Tab4 = Window:Tab({
-    Text = "Tap sea even"
- })
- 
-local Section = Tab:Section({
-    Text = "Tap Raid"
- })
 
- Section:Button({
-    Text = "Buy Chip",
-    Callback = function()
-        warn("Buy Chip")
-    end
-}) 
+local Section1 = Page1:CreateSection("Section Name")
 
-Section:Button({
-    Text = "Kill Aura",
-    Callback = function()
-        warn("Kill Aura")
-    end
- })
-  
-Section:Button({
-    Text = "Next Đảo",
-    Callback = function()
-        warn("Next Đảo")
-    end
- })
-  
-Section:Button({
-    Text = "Bắt Đầu Raid",
-    Callback = function()
-        warn("Bắt Đầu Raid")
-    end
- })
- 
- Section:Button({
-    Text = "Auto Thức Tỉnh",
-    Callback = function()
-        warn("Auto Thức Tỉnh")
-    end
- })
+Section1:CreateSlider("Slider Example", {Min = 16, Max = 500, DefaultValue = 30}, function(Value)
+   print(Value)
+end)
 
- local drop = Section:Dropdown({
-    Text = "Buy Chip",
-    List = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"},
-    Callback = function(v)
-        warn(v)
-    end
- })
+Section1:CreateToggle("Toggle Example", {Toggled=false , Description = false}, function(Value)
+   print(Value)
+end)
+
+Section1:CreateButton("Button Example", function ()
+   print("Button Cliked!")
+end)
+
+Section1:CreateTextbox("TextBox", false, function (vv)
+   print(vv)
+end)
+
+Section1:CreateDropdown("Dropdown ", {
+   List = {"Value1", "Value2", "Value3", "Value4"},
+   Default = "None"}, function(value)
+       print(value)
+end)
+
+Section1:CreateColorPicker("Color Picker", Color3.fromRGB(255, 255, 255), function ()
+   print("fsf")
+end)
+
+local dropdown = Section1:CreateDropdown("Refresh Dropdown ", {
+   List = {"Value1", "Value2", "Value3", "Value4"},
+   Default = "None"}, function(value)
+       print(value)
+end)
+
+
+
+Section1:CreateButton("Refresh Example", function ()
+   local newlist = {"resf", "uwua", "fsk"}
+   dropdown:Clear()
+   wait(1)
+   dropdown:Add(newlist)
+end)
