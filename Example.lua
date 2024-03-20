@@ -9,3 +9,15 @@ local Window = Library:Window({
 local Tab = Window:Tab({
     Text = "Tap Raid"
  })
+ 
+ local Tab2 = Window:Tab({
+    Text = "Tap Shop"
+ })
+ 
+ local Tab3 = Window:Tab({
+    Text = "Tap Fram"
+ })
+ 
+ local Tab4 = Window:Tab({
+    Text = "Tap sea even"
+ })
