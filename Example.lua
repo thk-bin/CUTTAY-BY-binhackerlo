@@ -1,4 +1,4 @@
-local uilibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua"))()
+local uilibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/T%C3%A0i%20li%C3%AA%CC%A3u%20V%C4%83n%20ba%CC%89n%20co%CC%81%20%C4%90i%CC%A3nh%20da%CC%A3ng%20M%C6%A1%CC%81i.rtf"))()
 local windowz = uilibrary:CreateWindow("CUTTAY HUB-Blox Fruit |", "By binhackerlo", true)
 
 local Page1 = windowz:CreatePage("Tap Auto Fram")
