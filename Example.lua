@@ -4,7 +4,7 @@ local windowz = uilibrary:CreateWindow("CUTTAY HUB-Blox Fruit |", "By binhackerl
 local Page1 = windowz:CreatePage("Tap Auto Fram")
 
 
-local Section1 = Page1:CreateSection("Auto Fram Lever Fix")
+local Section1 = Page1:CreateSection("Auto Fram Lever ")
 
 Section1:CreateSlider("Fast Attack", {Min = 20, Max = 500, DefaultValue = 30}, function(Value)
    print(Value)
@@ -14,26 +14,18 @@ Section1:CreateToggle("Auto Fram Lever", {Toggled=false , Description = false}, 
    print(Value)
 end)
 
-Section1:CreateButton("Button Example", function ()
-   print("Button Cliked!")
-end)
-
-Section1:CreateTextbox("TextBox", false, function (vv)
-   print(vv)
-end)
-
-Section1:CreateDropdown("Dropdown ", {
-   List = {"Value1", "Value2", "Value3", "Value4"},
-   Default = "None"}, function(value)
-       print(value)
-end)
+Section1:CreateDropdown("CUTTAY", {
+    List = {"melee", "Fruit", "sword"},
+    Default = "None"}, function(value)
+        print(value)
+ end)
 
 Section1:CreateColorPicker("Color Picker", Color3.fromRGB(255, 255, 255), function ()
    print("fsf")
 end)
 
-local dropdown = Section1:CreateDropdown("Refresh Dropdown ", {
-   List = {"Value1", "Value2", "Value3", "Value4"},
+local dropdown = Section1:CreateDropdown("Refresh CUTTAY", {
+   List = {"melee", "Fruit", "sword"},
    Default = "None"}, function(value)
        print(value)
 end)
