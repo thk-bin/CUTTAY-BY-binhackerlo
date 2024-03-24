@@ -1,5 +1,5 @@
 if getgenv().BananaCat then 
-	if game.CoreGui:FindFirstChild("CUTTAY HUB-Blox Fruit GUI") then for i, v in ipairs(game.CoreGui:GetChildren()) do if string.find(v.Name,  "Banana Cat Hub") then v:Destroy() end end end
+	if game.CoreGui:FindFirstChild("CUTTAY HUB-Blox Fruit GUI") then for i, v in ipairs(game.CoreGui:GetChildren()) do if string.find(v.Name,  "CUTTAY HUB-Blox Fruit") then v:Destroy() end end end
 end
 getgenv().BananaCat = true
 local IndexUIColor = {
