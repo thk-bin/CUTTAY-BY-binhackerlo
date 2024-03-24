@@ -1,5 +1,5 @@
 if getgenv().BananaCat then 
-	if game.CoreGui:FindFirstChild("CUTTAY HUB-Blox Fruit GUI") then for i, v in ipairs(game.CoreGui:GetChildren()) do if string.find(v.Name,  "CUTTAY HUB-Blox Fruit") then v:Destroy() end end end
+	if game.CoreGui:FindFirstChild("Banana Cat Hub GUI") then for i, v in ipairs(game.CoreGui:GetChildren()) do if string.find(v.Name,  "Banana Cat Hub") then v:Destroy() end end end
 end
 getgenv().BananaCat = true
 local IndexUIColor = {
@@ -49,7 +49,7 @@ local uis = game:GetService("UserInputService")
 
 Library_Function.Gui = Instance.new('ScreenGui')
 Library_Function.Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.Gui.Name = 'CUTTAY HUB-Blox Fruit GUI'
+Library_Function.Gui.Name = 'Banana Cat Hub GUI'
 
 getgenv().ReadyForGuiLoaded = false
 spawn(function()
@@ -61,11 +61,11 @@ end)
 
 Library_Function.NotiGui = Instance.new('ScreenGui')
 Library_Function.NotiGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.NotiGui.Name = 'CUTTAY HUB-Blox Fruit Notification'
+Library_Function.NotiGui.Name = 'Banana Cat Hub Notification'
 
 Library_Function.HideGui = Instance.new('ScreenGui')
 Library_Function.HideGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.HideGui.Name = 'CUTTAY HUB-Blox Fruit Btn'
+Library_Function.HideGui.Name = 'Banana Cat Hub Btn'
 
 local btnHideFrame = Instance.new('Frame', Library_Function.HideGui)
 btnHideFrame.AnchorPoint = Vector2.new(0, 0)
@@ -97,11 +97,11 @@ Library.ToggleUI = function()
 	TweenService:Create(imgHide, TweenInfo.new(.25), {Size = UDim2.new(0,sizeXY,0,sizeXY)}):Play()
 	TweenService:Create(btnHideFrame, TweenInfo.new(.25), {BackgroundTransparency = getgenv().UIToggled and .25 or 0}):Play()
 	getgenv().UIToggled = not getgenv().UIToggled
-	if game.CoreGui:FindFirstChild("CUTTAY HUB-Blox Fruit GUI")then for a,b in ipairs(game.CoreGui:GetChildren())do if b.Name=="Banana Cat Hub GUI"then b.Enabled= getgenv().UIToggled end end end
+	if game.CoreGui:FindFirstChild("Banana Cat Hub GUI")then for a,b in ipairs(game.CoreGui:GetChildren())do if b.Name=="Banana Cat Hub GUI"then b.Enabled= getgenv().UIToggled end end end
 end
 
 Library.DestroyUI = function()
-    if game.CoreGui:FindFirstChild("CUTTAY HUB-Blox Fruit GUI") then for i, v in ipairs(game.CoreGui:GetChildren()) do if string.find(v.Name,  "Banana Cat Hub") then v:Destroy() end end end
+    if game.CoreGui:FindFirstChild("Banana Cat Hub GUI") then for i, v in ipairs(game.CoreGui:GetChildren()) do if string.find(v.Name,  "Banana Cat Hub") then v:Destroy() end end end
 end
 
 btnHide.MouseButton1Click:Connect(function() 
@@ -193,7 +193,7 @@ function Library.CreateNoti(Setting)
 	local colorG = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[2])
 	local colorB = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[3])
 	local color = colorR .. ',' .. colorG .. ',' .. colorB
-	TextLabelNoti.Text = "<font color=\"rgb(" .. color .. ")\">CUTTAY HUB-Blox Fruit</font> "..getgenv().TitleNameNoti
+	TextLabelNoti.Text = "<font color=\"rgb(" .. color .. ")\">Banana Cat Hub</font> "..getgenv().TitleNameNoti
 	
 	TextLabelNoti.Name = "TextLabelNoti"
 	TextLabelNoti.Parent = Topnoti
@@ -376,7 +376,7 @@ function Library.CreateMain(Setting)
 	local colorG = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[2])
 	local colorB = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[3])
 	local color = colorR .. ',' .. colorG .. ',' .. colorB
-	TextLabelMain.Text = "<font color=\"rgb("..color..")\">CUTTAY HUB-Blox Fruit</font> " .. getgenv().MainDesc
+	TextLabelMain.Text = "<font color=\"rgb("..color..")\">Banana Cat Hub</font> " .. getgenv().MainDesc
 
 	MainContainer = Instance.new("ImageLabel")
 	MainContainer.Name = "MainContainer"
@@ -437,7 +437,7 @@ function Library.CreateMain(Setting)
 	local colorG = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[2])
 	local colorB = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[3])
 	local color = colorR .. ',' .. colorG .. ',' .. colorB
-	TextLabelMain.Text = "<font color=\"rgb("..color..")\">CUTTAY HUB-Blox Fruit</font> " .. getgenv().MainDesc
+	TextLabelMain.Text = "<font color=\"rgb("..color..")\">Banana Cat Hub</font> " .. getgenv().MainDesc
 
 	PageControl.Name = "Background1"
 	PageControl.Parent = Concacmain
