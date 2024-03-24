@@ -6,7 +6,7 @@ local IndexUIColor = {
     ["Border Color"] = Color3.fromRGB(255, 236, 161),
     ["Click Effect Color"] = Color3.fromRGB(230, 230, 230),
     ["Setting Icon Color"] = Color3.fromRGB(230, 230, 230),
-    ["Logo Image"] = "rbxassetid://16435032782",
+    ["Logo Image"] = "rbxassetid://5009915795",
     ["Search Icon Color"] = Color3.fromRGB(255, 255, 255),
     ["Search Icon Highlight Color"] = Color3.fromRGB(255, 236, 161),
     ["GUI Text Color"] = Color3.fromRGB(230, 230, 230),
@@ -81,7 +81,7 @@ btnHide.Size = UDim2.new(1,0,1,0)
 
 local imgHide = Instance.new('ImageLabel', btnHideFrame)
 imgHide.AnchorPoint = Vector2.new(0, 0)
-imgHide.Image = "rbxassetid://16435032782"
+imgHide.Image = "rbxassetid://5009915795"
 imgHide.BackgroundTransparency = 1
 imgHide.Size = UDim2.new(0,40,0,40)
 imgHide.AnchorPoint = Vector2.new(.5,.5)
@@ -221,7 +221,7 @@ function Library.CreateNoti(Setting)
 	CloseImage.BackgroundColor3 = Color3.fromRGB(230, 230, 230)
 	CloseImage.BackgroundTransparency = 1.000
 	CloseImage.Size = UDim2.new(1, 0, 1, 0)
-	CloseImage.Image = "rbxassetid://16435032782"
+	CloseImage.Image = "rbxassetid://3926305904"
 	CloseImage.ImageRectOffset = Vector2.new(284, 4)
 	CloseImage.ImageRectSize = Vector2.new(24, 24)
 	CloseImage.ImageColor3 = getgenv().UIColor["Search Icon Color"]
@@ -282,7 +282,7 @@ function Library.CreateNoti(Setting)
 end
 function Library.CreateMain(Setting)
 
-	local TitleNameMain = tostring(Setting.Title) or "CUTTAY HUB-Blox Fruit"
+	local TitleNameMain = tostring(Setting.Title) or "Banana Cat Hub"
 	getgenv().MainDesc = Setting.Desc or ""
 
 	local djtmemay = false
@@ -365,7 +365,7 @@ function Library.CreateMain(Setting)
 	maingui.Position = UDim2.new(0.5, 0, 0.5, 0)
 	maingui.Selectable = true
 	maingui.Size = UDim2.new(1, 30, 1, 30)
-	maingui.Image = "rbxassetid://16435032782"
+	maingui.Image = "rbxassetid://8068653048"
 	maingui.ScaleType = Enum.ScaleType.Slice
 	maingui.SliceCenter = Rect.new(15, 15, 175, 175)
 	maingui.SliceScale = 1.300
