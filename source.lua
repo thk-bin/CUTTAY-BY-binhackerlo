@@ -1,7 +1,7 @@
 
 local CFAHub = {}
 
-warn(https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/T%C3%A0i%20li%C3%AA%CC%A3u%20V%C4%83n%20ba%CC%89n%20co%CC%81%20%C4%90i%CC%A3nh%20da%CC%A3ng%20M%C6%A1%CC%81i.rtf")
+warn(")
 
 repeat wait() until game:IsLoaded()
 repeat wait() until game.Players.LocalPlayer
