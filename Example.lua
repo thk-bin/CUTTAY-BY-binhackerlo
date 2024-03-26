@@ -64,8 +64,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-bin
 --[[
 local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/thk-bin/CUTTAY-BY-binhackerlo/main/source.lua"))()
 KeySystemUI.New({
-    ApplicationName = "CUTTAYHUB", -- Your Key System Application Name
-    Name = "CUTTAYHUB", -- Your Script name
+    ApplicationName = "CUTTAYHUB-Blox Fruit", -- Your Key System Application Name
+    Name = "CUTTAYHUB-Blox Fruit", -- Your Script name
     Info = _G.ThongBaoChoose, -- Info text in the GUI, keep empty for default text.
     DiscordInvite = _G.Discord, -- Optional.
     AuthType = "clientid" -- Can select verification with ClientId or IP ("clientid" or "ip")
