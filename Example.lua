@@ -148,9 +148,9 @@ function CreateSupportList(list_game)
 		end)
 	end
 	
-	local Anh_Gai_Alimi = {"rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782",
-		"rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782",
-		"rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782"
+	local Anh_Gai_Alimi = {"rbxassetid://16435032782","rbxassetid://16877173471","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16877173471",
+		"rbxassetid://16435032782","rbxassetid://16877173471","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782","rbxassetid://16435032782",
+		"rbxassetid://16877173471","rbxassetid://16435032782","rbxassetid://16877173471","rbxassetid://16435032782","rbxassetid://16877173471","rbxassetid://16435032782"
 	}
 	
 	local SupportUi = Instance.new("ScreenGui")
