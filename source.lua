@@ -15,7 +15,7 @@ local HIDEUI = get_hidden_gui or gethui
 if syn and typeof(syn) == "table" and RenderWindow then
 	syn.protect_gui = gethui
 end
-local RemoveStringsInvite = { "discord.gg", "discord.com/invite" }
+local RemoveStringsInvite = { "discord.gg", "https://discord.gg/FUxgYvuV" }
 local function JoinDiscord(DiscordInvite)
 	if setclipboard then
 		setclipboard(DiscordInvite)
@@ -171,7 +171,7 @@ local function MakeUi(settings)
 	uicorner_2.Parent = close_btn
 
 	local clear = Instance.new("ImageButton")
-	clear.Image = "rbxassetid://3926305904"
+	clear.Image = "rbxassetid://16435032782"
 	clear.ImageColor3 = Color3.new(0.619608, 0.619608, 0.619608)
 	clear.ImageRectOffset = Vector2.new(924, 724)
 	clear.ImageRectSize = Vector2.new(36, 36)
@@ -205,10 +205,10 @@ local function MakeUi(settings)
 	if settings.Info == "" then
 		text_label_2.Text = "To use the free version of "
 			.. tostring(settings.Name)
-			.. " you need a key. Click 'Get Key' button to get your key!"
+			.. "Click 'Get Key'"
 	else
 		text_label_2.Text = settings.Info == nil
-				and "To use the free version of " .. tostring(settings.Name) .. " you need a key. Click 'Get Key' button to get your key!"
+				and "To use the free version of " .. tostring(settings.Name) .. "Click 'Get Key'"
 			or tostring(settings.Info)
 	end
 	text_label_2.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
@@ -226,7 +226,7 @@ local function MakeUi(settings)
 	local text_box = Instance.new("TextBox")
 	text_box.CursorPosition = -1
 	text_box.Font = Enum.Font.Gotham
-	text_box.PlaceholderText = "Enter Key..."
+	text_box.PlaceholderText = "Enter Key.."
 	text_box.Text = ""
 	text_box.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
 	text_box.TextSize = 16
