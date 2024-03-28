@@ -22,14 +22,14 @@ local Tab = Window:MakeTab({
             Default = 5,
             Color = Color3.fromRGB(255,255,255),
             Increment = 1,
-            ValueName = "DisCord BINHACKERLO!",
+            ValueName = "Discord BINHACKERLO!!",
             Callback = function(Value)
                 print(Value)
             end 
             Tab:AddDropdown({
-                Name = "Dropdown",
+                Name = "Auto Melee",
                 Default = "1",
-                Options = {"1", "2"},
+                Options = {"Melee", "Sword","Fruit"},
                 Callback = function(Value)
                     print(Value)
                 end    
