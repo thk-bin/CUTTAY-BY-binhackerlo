@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "CUTTAYHUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "CUTTAY HUB-Blox Fruit", HidePremium = false, SaveConfig = true, ConfigFolder = "By Binnhackerlo!"})
 
 OrionLib:MakeNotification({
 	Name = "CUTTAY HUB_Blox Fruit",
@@ -22,7 +22,7 @@ local Tab = Window:MakeTab({
             Default = 5,
             Color = Color3.fromRGB(255,255,255),
             Increment = 1,
-            ValueName = "Discord BINHACKERLO!!",
+            ValueName = "Discord BINHACKERLO!",
             Callback = function(Value)
                 print(Value)
             end 
@@ -32,7 +32,7 @@ local Tab = Window:MakeTab({
                 Options = {"Melee", "Sword","Fruit"},
                 Callback = function(Value)
                     print(Value)
-                end    
+                end   
             })                       
         })
     })
